@@ -1,0 +1,82 @@
+@import url("audio.css");
+html{height: 100%;}
+body {
+	padding:0;
+	margin: 0;
+	width:100%;
+	height:100%;
+	background-color:white;
+}
+
+h1{
+	font-size:medium;
+	font-family:cursive,Arial;
+	font-weight:bold; 
+}
+
+p{
+	font-size:small;
+	font-family: 'Courier New';
+}
+
+#header{
+	float:left;
+	width:100%;
+	background-color:#202020;
+}
+
+#logo{
+	width:10%;
+	background-color:#202020;
+	float:left;
+}
+
+#footer {
+	width:100%;
+	background-color:#202020;
+	float:left;
+}
+
+#cuerpo{
+	float: right;
+    min-height: 82%;
+    left: 10%;
+    margin-right: 19%;
+    width: 66%;
+    text-align: left;
+}
+
+#pie{
+	float:left;
+	margin-left:18%;
+}
+
+#inicioSesion{
+	float:right;
+}
+
+#inicioSesion a:link, #inicioSesion a:visited{
+	color:white;
+}
+
+.lista a{
+	padding:1%;
+}
+
+#paginacion {
+	clear:both;
+    margin-top:28%;
+}
+
+.page {
+	padding-left:1%;
+}
+
+.page a:link, .page a:visited {
+	padding-left:1%;
+	color: #202020;
+}
+
+.page a:hover {
+	color: red;
+}
