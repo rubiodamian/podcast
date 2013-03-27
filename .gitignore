@@ -1,4 +1,3 @@
-*~ #archivos temporales de gedit
 cache/ #cache de symfony
 .svn/  #directorio correspondiente a svn
 
