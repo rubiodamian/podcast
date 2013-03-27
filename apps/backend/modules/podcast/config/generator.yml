@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           podcast
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          podcast
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _delete: { credentials: God }
+      fields:  ~
+      list:
+        title:   Lista de Podcasts
+        display: [=nombre, descripcion, categoria]
+        batch_actions: { }
+      filter:
+        display: [nombre, descripcion]
+      form:    ~
+      edit:
+        title: Editar podcast %%nombre%%
+        display: [nombre, descripcion, publicado, imagen, categoria_idCategoria, user_id]
+      new:
+        title: Nuevo podcast
+        display: [nombre, descripcion, publicado, imagen, categoria_idCategoria, user_id]
