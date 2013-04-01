@@ -19,7 +19,7 @@
 </div>
 
 <div id="CerrarSesion">
-  <?echo link_to("Cerrar Sesion", url_for("/podcast/web/backend.php/logout"))?>
+  <?echo link_to("Cerrar Sesion", url_for("/entrega3/web/backend.php/logout"))?>
 </div>
 
 
