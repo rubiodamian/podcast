@@ -22,15 +22,14 @@
     </div>
     <div class="controlesAudio">
       <audio controls="controls">
-        <source src="/alumno/entrega3/web/uploads/music/<?php echo $episodio->getFuentemp3()?>" type="audio/mp3"/>
-	    <source src="/alumno/entrega3/web/uploads/music/<?php echo $episodio->getFuenteogg()?>" type="audio/ogg"/> 
+        <source src="/podcast/web/uploads/music/<?php echo $episodio->getFuentemp3()?>" type="audio/mp3"/>
+	    <source src="/podcast/web/uploads/music/<?php echo $episodio->getFuenteogg()?>" type="audio/ogg"/> 
 	    No funciona en tu navegador. 
       </audio>
     </div> 
     <div class="descarga">
-      <a href="/uploads/music/<?php echo $episodio->getFuenteogg()?>">Descargar</a>
+      <a href="/podcast/web/uploads/music/<?php echo $episodio->getFuenteogg()?>">Descargar</a>
     </div>
     <?php endforeach; ?>
 </div>
 <div id="volver"><?php echo link_to('Volver','@homepage')?></div>
-

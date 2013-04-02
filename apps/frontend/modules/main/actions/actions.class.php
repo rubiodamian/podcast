@@ -54,7 +54,7 @@ class mainActions extends sfActions
   public function executeDescargar(sfWebRequest $request)
   {
   	$archivo=$request->getParameter('archivo');
-  	$file='https://grupo93.proyecto2011.linti.unlp.edu.ar/alumno/entrega3/web/uploads/music/'.$archivo;
+  	$file='localhost/web/uploads/music/'.$archivo;
   	$type=finfo_file(finfo_open(FILEINFO_MIME_TYPE),$file);
   	$size=filesize($file);
   	$this->getResponse()->clearHttpHeaders(); 
@@ -72,49 +72,6 @@ class mainActions extends sfActions
   {
   	
   }
-
-/*  public function executeNew(sfWebRequest $request)
-  {
-    $this->form = new podcastForm();
-  }
-
-  public function executeCreate(sfWebRequest $request)
-  {
-    $this->forward404Unless($request->isMethod(sfRequest::POST));
-
-    $this->form = new podcastForm();
-
-    $this->processForm($request, $this->form);
-
-    $this->setTemplate('new');
-  }
-
-  public function executeEdit(sfWebRequest $request)
-  {
-    $this->forward404Unless($podcast = Doctrine_Core::getTable('podcast')->find(array($request->getParameter('id_podcast'))), sprintf('Object podcast does not exist (%s).', $request->getParameter('id_podcast')));
-    $this->form = new podcastForm($podcast);
-  }
-
-  public function executeUpdate(sfWebRequest $request)
-  {
-    $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($podcast = Doctrine_Core::getTable('podcast')->find(array($request->getParameter('id_podcast'))), sprintf('Object podcast does not exist (%s).', $request->getParameter('id_podcast')));
-    $this->form = new podcastForm($podcast);
-
-    $this->processForm($request, $this->form);
-
-    $this->setTemplate('edit');
-  }
-
-  public function executeDelete(sfWebRequest $request)
-  {
-    $request->checkCSRFProtection();
-
-    $this->forward404Unless($podcast = Doctrine_Core::getTable('podcast')->find(array($request->getParameter('id_podcast'))), sprintf('Object podcast does not exist (%s).', $request->getParameter('id_podcast')));
-    $podcast->delete();
-
-    $this->redirect('main/index');
-  }*/
 
   protected function processForm(sfWebRequest $request, sfForm $form)
   {

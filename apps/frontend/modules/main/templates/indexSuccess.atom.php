@@ -10,7 +10,7 @@
 	  <title>
         <?php echo $episodio->getNombre(); ?>
       </title>
-      <link><?php echo "https://grupo93.proyecto2011.linti.unlp.edu.ar/alumno/entrega3/web/uploads/music/".$episodio->getFuentemp3()?></link> 
+      <link><?php echo "localhost/podcast/web/uploads/music/".$episodio->getFuentemp3()?></link> 
 	</item>  
 	<?php endforeach ?>
 </channel>

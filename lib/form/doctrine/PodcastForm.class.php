@@ -14,7 +14,7 @@ class PodcastForm extends BasePodcastForm
   {
   	$this->widgetSchema['imagen'] = new sfWidgetFormInputFileEditable(array(
       'label'       => 'Imagen Podcast', 
-      'file_src'    => '/alumno/entrega3/web/uploads/images/'.$this->getObject()->getImagen(), 
+      'file_src'    => '/podcast/web/uploads/images/'.$this->getObject()->getImagen(), 
       'is_image'    => true,
       'edit_mode'   => !$this->isNew(),
   	  'with_delete' => false,
