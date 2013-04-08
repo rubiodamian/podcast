@@ -1,0 +1,7 @@
+Se asume que se cuenta con apache y mysql instalados. Los pasos siguientes son especificos de la instalacion en el sistema operativo Ubuntu.
+1. Instalar la herramienta PEAR (sudo apt-get php-pear)
+2. Instalar symfony 1.4 mediante pear: mediante consola escribir el comando sudo pear channel-discover pear.symfony-project.com. Luego, escribir el comando sudo pear install symfony/symfony.
+3. Colocar el contenido de este repositorio en el directorio root de apache.
+4. Editar el archivo config/databases.yml, ajustando los parametros a la instalación local de mysql.
+5. Crear una base de datos mysql denominada podcast y ejecutar sobre ella el script que se encuentra en el directorio podcast, denominado podcast.sql.
+6. Acceder a la aplicacion en un navegador. Al front-end se accede mediante la url localhost/podcast/web/index.php. Al backend mediante localhost/podcast/web/backend.php. Las cuentas para acceder al backend son, principalmente dos: administrador (username) administrador (password) y publicador publicador.
