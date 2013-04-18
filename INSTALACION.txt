@@ -5,3 +5,5 @@ Se asume que se cuenta con apache y mysql instalados. Los pasos siguientes son e
 4. Editar el archivo config/databases.yml, ajustando los parametros a la instalación local de mysql.
 5. Crear una base de datos mysql denominada podcast y ejecutar sobre ella el script que se encuentra en el directorio podcast, denominado podcast.sql.
 6. Acceder a la aplicacion en un navegador. Al front-end se accede mediante la url localhost/podcast/web/index.php. Al backend mediante localhost/podcast/web/backend.php. Las cuentas para acceder al backend son, principalmente dos: administrador (username) administrador (password) y publicador publicador.
+
+NOTA: tener en cuenta que a la hora de cargar archivos de audio, aquellos que pesen 1mb o mas no son almacenados. Es decir, solamente subir archivos de musica de menos de 1mb. (Pueden cortar temas originales con el programa audacity, por ejemplo)
