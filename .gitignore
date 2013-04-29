@@ -1,3 +1,14 @@
-cache/ #cache de symfony
-.svn/  #directorio correspondiente a svn
-
+cache/*
+log/*
+web/uploads/*
+data/sql/*
+data/podcast.index/
+lib/filter/doctrine/base/Base*
+lib/filter/doctrine/*Plugin/base/Base*
+lib/form/doctrine/base/Base*
+lib/form/doctrine/*Plugin/base/Base*
+lib/model/doctrine/base/Base*
+lib/model/doctrine/*Plugin/base/Base*
+lib/model/om/*
+lib/model/map/*
+web/*Plugin/*
