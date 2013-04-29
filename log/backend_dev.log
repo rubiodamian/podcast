@@ -2777,3 +2777,508 @@ Apr 29 21:54:47 symfony [info] {sfWebDebugLogger} Component "componentesbe/estil
 Apr 29 21:54:47 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.29 ms (1)
 Apr 29 21:54:47 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 6.31 ms (1)
 Apr 29 21:54:47 symfony [info] {sfWebResponse} Send content (98932 o)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 29 22:05:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'podcast',  'action' => 'index',)
+Apr 29 22:05:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 29 22:05:16 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 29 22:05:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 29 22:05:16 symfony [info] {podcastActions} Call "podcastActions->executeIndex()"
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidaditemsporpagina AS c__cantidaditemsporpagina FROM configuracion c - ()
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM podcast p - ()
+Apr 29 22:05:17 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/indexSuccess.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_assets.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_flashes.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_header.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters_field.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters_field.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_th_tabular.php"
+Apr 29 22:05:17 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p LIMIT 5 - ()
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_td_tabular.php"
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_td_actions.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_batch_actions.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_actions.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_footer.php"
+Apr 29 22:05:17 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:17 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:17 symfony [info] {main} Call "componentesbe->executeTitulo()"
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_titulo.php"
+Apr 29 22:05:17 symfony [info] {main} Call "componentesbe->executeEstilo()"
+Apr 29 22:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_estilo.php"
+Apr 29 22:05:17 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/principal/templates/_menu.php"
+Apr 29 22:05:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 29 22:05:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (15)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Factories 39.18 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Action "podcast/index" 50.08 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.88 ms (10)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} View "Success" for "podcast/index" 35.32 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_assets" 0.42 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_flashes" 0.30 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_header" 0.34 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_filters" 4.01 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_filters_field" 1.26 ms (2)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list" 9.10 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_th_tabular" 1.03 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_td_tabular" 4.48 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_td_actions" 0.88 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_batch_actions" 0.36 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_actions" 0.34 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_footer" 0.26 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Component "componentesbe/titulo" 1.27 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_titulo" 0.31 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Component "componentesbe/estilo" 1.19 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.41 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 6.03 ms (1)
+Apr 29 22:05:17 symfony [info] {sfWebResponse} Send content (98813 o)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 29 22:05:22 symfony [info] {sfPatternRouting} Match route "episodio" (/episodio.:sf_format) for /episodio with parameters array (  'module' => 'episodio',  'action' => 'index',  'sf_format' => 'html',)
+Apr 29 22:05:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 29 22:05:22 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 29 22:05:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 29 22:05:22 symfony [info] {episodioActions} Call "episodioActions->executeIndex()"
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidaditemsporpagina AS c__cantidaditemsporpagina FROM configuracion c - ()
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM episodio e - ()
+Apr 29 22:05:22 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/indexSuccess.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_assets.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_flashes.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_header.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_filters.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_filters_field.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_th_tabular.php"
+Apr 29 22:05:22 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:22 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:22 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:22 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.idepisodio AS e__idepisodio, e.nombre AS e__nombre, e.fuentemp3 AS e__fuentemp3, e.fuenteogg AS e__fuenteogg, e.podcast_idpodcast AS e__podcast_idpodcast, e.created_at AS e__created_at, e.updated_at AS e__updated_at FROM episodio e LIMIT 5 - ()
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_batch_actions.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_tabular.php"
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.idpodcast = ?) - (1)
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_actions.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_batch_actions.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_actions.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_footer.php"
+Apr 29 22:05:22 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:22 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:22 symfony [info] {main} Call "componentesbe->executeTitulo()"
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_titulo.php"
+Apr 29 22:05:22 symfony [info] {main} Call "componentesbe->executeEstilo()"
+Apr 29 22:05:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_estilo.php"
+Apr 29 22:05:22 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/principal/templates/_menu.php"
+Apr 29 22:05:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 29 22:05:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Configuration 1.51 ms (15)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Factories 42.59 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Action "episodio/index" 52.69 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.42 ms (10)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} View "Success" for "episodio/index" 35.10 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_assets" 0.35 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_flashes" 0.32 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_header" 0.27 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_filters" 4.42 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_filters_field" 0.89 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list" 7.71 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_th_tabular" 0.81 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_batch_actions" 0.43 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_tabular" 2.62 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_actions" 1.04 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_batch_actions" 0.83 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_actions" 0.35 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_footer" 0.25 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Component "componentesbe/titulo" 1.39 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_titulo" 0.34 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Component "componentesbe/estilo" 1.56 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.36 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 5.39 ms (1)
+Apr 29 22:05:22 symfony [info] {sfWebResponse} Send content (96265 o)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 29 22:05:23 symfony [info] {sfPatternRouting} Match route "episodio" (/episodio.:sf_format) for /episodio with parameters array (  'module' => 'episodio',  'action' => 'index',  'sf_format' => 'html',)
+Apr 29 22:05:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 29 22:05:23 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 29 22:05:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 29 22:05:23 symfony [info] {episodioActions} Call "episodioActions->executeIndex()"
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidaditemsporpagina AS c__cantidaditemsporpagina FROM configuracion c - ()
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM episodio e - ()
+Apr 29 22:05:23 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/indexSuccess.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_assets.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_flashes.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_header.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_filters.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_filters_field.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_th_tabular.php"
+Apr 29 22:05:23 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:23 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:23 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:23 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.idepisodio AS e__idepisodio, e.nombre AS e__nombre, e.fuentemp3 AS e__fuentemp3, e.fuenteogg AS e__fuenteogg, e.podcast_idpodcast AS e__podcast_idpodcast, e.created_at AS e__created_at, e.updated_at AS e__updated_at FROM episodio e LIMIT 5 - ()
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_batch_actions.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_tabular.php"
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.idpodcast = ?) - (1)
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_td_actions.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_batch_actions.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_actions.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoEpisodio/templates/_list_footer.php"
+Apr 29 22:05:23 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:23 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:23 symfony [info] {main} Call "componentesbe->executeTitulo()"
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_titulo.php"
+Apr 29 22:05:23 symfony [info] {main} Call "componentesbe->executeEstilo()"
+Apr 29 22:05:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_estilo.php"
+Apr 29 22:05:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/principal/templates/_menu.php"
+Apr 29 22:05:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 29 22:05:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (15)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Factories 39.50 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Action "episodio/index" 51.69 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.74 ms (10)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} View "Success" for "episodio/index" 33.13 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_assets" 0.42 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_flashes" 0.33 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_header" 0.24 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_filters" 3.33 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_filters_field" 0.63 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list" 7.58 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_th_tabular" 0.79 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_batch_actions" 0.34 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_tabular" 2.64 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_td_actions" 0.95 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_batch_actions" 0.38 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_actions" 0.33 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "episodio/_list_footer" 0.39 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Component "componentesbe/titulo" 1.23 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_titulo" 0.35 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Component "componentesbe/estilo" 1.07 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.37 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 7.09 ms (1)
+Apr 29 22:05:23 symfony [info] {sfWebResponse} Send content (96273 o)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 29 22:05:24 symfony [info] {sfPatternRouting} Match route "podcast_podcast" (/podcast.:sf_format) for /podcast with parameters array (  'module' => 'podcast',  'action' => 'index',  'sf_format' => 'html',)
+Apr 29 22:05:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 29 22:05:24 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 29 22:05:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 29 22:05:24 symfony [info] {podcastActions} Call "podcastActions->executeIndex()"
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidaditemsporpagina AS c__cantidaditemsporpagina FROM configuracion c - ()
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM podcast p - ()
+Apr 29 22:05:24 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/indexSuccess.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_assets.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_flashes.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_header.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters_field.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_filters_field.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_th_tabular.php"
+Apr 29 22:05:24 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p LIMIT 5 - ()
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_td_tabular.php"
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_td_actions.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_batch_actions.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_actions.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoPodcast/templates/_list_footer.php"
+Apr 29 22:05:24 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:24 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:24 symfony [info] {main} Call "componentesbe->executeTitulo()"
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_titulo.php"
+Apr 29 22:05:24 symfony [info] {main} Call "componentesbe->executeEstilo()"
+Apr 29 22:05:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_estilo.php"
+Apr 29 22:05:24 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/principal/templates/_menu.php"
+Apr 29 22:05:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 29 22:05:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (15)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Factories 50.14 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Action "podcast/index" 61.59 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 6.59 ms (10)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} View "Success" for "podcast/index" 37.02 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_assets" 0.37 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_flashes" 0.31 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_header" 0.27 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_filters" 4.57 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_filters_field" 1.41 ms (2)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list" 9.76 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_th_tabular" 1.03 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_td_tabular" 5.16 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_td_actions" 0.86 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_batch_actions" 0.29 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_actions" 0.48 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "podcast/_list_footer" 0.28 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Component "componentesbe/titulo" 1.31 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_titulo" 0.34 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Component "componentesbe/estilo" 1.29 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.34 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 5.94 ms (1)
+Apr 29 22:05:24 symfony [info] {sfWebResponse} Send content (99013 o)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_filter" (/guard/groups/filter.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_batch" (/guard/groups/batch.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group" (/guard/groups.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_new" (/guard/groups/new.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_create" (/guard/groups.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_edit" (/guard/groups/:id/edit.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_update" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_delete" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_show" (/guard/groups/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_object" (/guard/groups/:id/:action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_group_collection" (/guard/groups/:action/action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_filter" (/guard/permissions/filter.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_batch" (/guard/permissions/batch.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission" (/guard/permissions.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_new" (/guard/permissions/new.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_create" (/guard/permissions.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_edit" (/guard/permissions/:id/edit.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_update" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_delete" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_show" (/guard/permissions/:id.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_object" (/guard/permissions/:id/:action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_permission_collection" (/guard/permissions/:action/action.:sf_format)
+Apr 29 22:05:25 symfony [info] {sfPatternRouting} Match route "configuracion" (/configuracion.:sf_format) for /configuracion with parameters array (  'module' => 'configuracion',  'action' => 'index',  'sf_format' => 'html',)
+Apr 29 22:05:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 29 22:05:25 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 29 22:05:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 29 22:05:25 symfony [info] {configuracionActions} Call "configuracionActions->executeIndex()"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM configuracion c - ()
+Apr 29 22:05:25 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/indexSuccess.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_assets.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_flashes.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_header.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_th_tabular.php"
+Apr 29 22:05:25 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Set slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {main} Get slot "sf_admin.current_header"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidaditemsporpagina AS c__cantidaditemsporpagina, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina, c.plantilladefecto AS c__plantilladefecto, c.nombresitio AS c__nombresitio, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c LIMIT 20 - ()
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_td_tabular.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_td_actions.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_batch_actions.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_actions.php"
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/cache/backend/dev/modules/autoConfiguracion/templates/_list_footer.php"
+Apr 29 22:05:25 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:25 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/templates/layout.php"
+Apr 29 22:05:25 symfony [info] {main} Call "componentesbe->executeTitulo()"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_titulo.php"
+Apr 29 22:05:25 symfony [info] {main} Call "componentesbe->executeEstilo()"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/componentesbe/templates/_estilo.php"
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 29 22:05:25 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/backend/modules/principal/templates/_menu.php"
+Apr 29 22:05:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 29 22:05:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (15)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Factories 38.69 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.13 ms (8)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Action "configuracion/index" 4.24 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} View "Success" for "configuracion/index" 82.63 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_assets" 0.38 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_flashes" 0.31 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_header" 0.26 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list" 5.60 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_th_tabular" 1.06 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_td_tabular" 0.81 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_td_actions" 0.58 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_batch_actions" 0.24 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_actions" 0.38 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "configuracion/_list_footer" 0.27 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Component "componentesbe/titulo" 1.51 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_titulo" 0.29 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Component "componentesbe/estilo" 1.12 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "componentesbe/_estilo" 0.27 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebDebugLogger} Partial "principal/_menu" 51.16 ms (1)
+Apr 29 22:05:25 symfony [info] {sfWebResponse} Send content (82804 o)
