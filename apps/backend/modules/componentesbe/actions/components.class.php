@@ -14,11 +14,11 @@ class componentesbeComponents extends sfComponents
   	$estilo = $estilo[0]['plantillaDefecto'];
   	if($estilo == "estilo1.css")
   	{
-  		$this->estilo = '/podcast/web/css/backEnd1.css';
+  		$this->estilo = '/css/backEnd1.css';
   	}
   	else
   	{
-  		$this->estilo = '/podcast/web/css/backEnd2.css';
+  		$this->estilo = '/css/backEnd2.css';
   	}
   	
   }

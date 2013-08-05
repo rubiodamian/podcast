@@ -208,3 +208,869 @@ Apr 29 21:55:23 symfony [info] {sfWebDebugLogger} Action "main/index" 70.81 ms (
 Apr 29 21:55:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.95 ms (5)
 Apr 29 21:55:23 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 17.16 ms (1)
 Apr 29 21:55:23 symfony [info] {sfWebResponse} Send content (376 o)
+May 27 22:42:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:42:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:42:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:42:23 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+May 27 22:42:23 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:42:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:42:23 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:23 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:23 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:42:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:42:23 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:42:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:42:23 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:42:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:42:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (13)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Factories 54.87 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Action "main/index" 46.49 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 20.64 ms (9)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 32.63 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.45 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.30 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.33 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.09 ms (1)
+May 27 22:42:23 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.29 ms (1)
+May 27 22:42:23 symfony [info] {sfWebResponse} Send content (49770 o)
+May 27 22:42:27 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:42:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:42:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:42:27 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%ñasd%, 1)
+May 27 22:42:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%ñasd%, 1)
+May 27 22:42:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:42:27 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:27 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:42:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:42:27 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:42:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:42:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:42:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:42:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Configuration 1.53 ms (13)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Factories 20.27 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Action "main/index" 41.19 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.57 ms (7)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 15.39 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.11 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.80 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.46 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.41 ms (1)
+May 27 22:42:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.50 ms (1)
+May 27 22:42:27 symfony [info] {sfWebResponse} Send content (45342 o)
+May 27 22:42:34 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:42:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:42:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:42:34 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+May 27 22:42:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.nombre ASC LIMIT 5 - (1)
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:42:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:42:34 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:34 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:42:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:42:34 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:42:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:42:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:42:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:42:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Configuration 1.64 ms (13)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Factories 21.57 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Action "main/index" 44.32 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.54 ms (9)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 24.33 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.64 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 2.63 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.47 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 2.17 ms (1)
+May 27 22:42:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.36 ms (1)
+May 27 22:42:34 symfony [info] {sfWebResponse} Send content (49975 o)
+May 27 22:42:42 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:42:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:42:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:42:42 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp%, 1)
+May 27 22:42:42 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) LIMIT 5 - (%scorp%, 1)
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:42:42 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:42:42 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:42 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:42 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:42:42 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:42:42 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:42:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:42:42 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:42:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:42:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (13)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Factories 24.15 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Action "main/index" 45.27 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.50 ms (9)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.90 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.35 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.26 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.28 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.00 ms (1)
+May 27 22:42:42 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.30 ms (1)
+May 27 22:42:42 symfony [info] {sfWebResponse} Send content (49986 o)
+May 27 22:42:45 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:42:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:42:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:42:45 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp%, 1)
+May 27 22:42:45 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) LIMIT 5 - (%scorp%, 1)
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:42:45 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:42:45 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:45 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:42:45 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:42:45 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:42:45 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:42:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:42:45 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:42:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:42:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (13)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Factories 26.01 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Action "main/index" 50.46 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.73 ms (9)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 25.35 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.52 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.29 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.26 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.41 ms (1)
+May 27 22:42:45 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.30 ms (1)
+May 27 22:42:45 symfony [info] {sfWebResponse} Send content (49969 o)
+May 27 22:43:01 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+May 27 22:43:01 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.nombre ASC LIMIT 5 - (1)
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:43:01 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:01 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:01 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:01 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:01 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:01 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:01 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (13)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Factories 20.68 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Action "main/index" 46.05 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.87 ms (9)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 21.84 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.34 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.81 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.42 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 2.03 ms (1)
+May 27 22:43:01 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.46 ms (1)
+May 27 22:43:01 symfony [info] {sfWebResponse} Send content (49972 o)
+May 27 22:43:03 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:03 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp%, 1)
+May 27 22:43:03 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) LIMIT 5 - (%scorp%, 1)
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:43:03 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:03 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:03 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:03 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:03 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:03 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:03 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Configuration 1.26 ms (13)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Factories 19.52 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Action "main/index" 41.95 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.06 ms (9)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.29 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.38 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.21 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.28 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.36 ms (1)
+May 27 22:43:03 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.41 ms (1)
+May 27 22:43:03 symfony [info] {sfWebResponse} Send content (49969 o)
+May 27 22:43:13 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:13 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp group by 1 -- -%, 1)
+May 27 22:43:13 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%scorp group by 1 -- -%, 1)
+May 27 22:43:13 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:13 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:13 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:13 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:13 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:13 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:13 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (13)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Factories 24.06 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Action "main/index" 42.42 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.80 ms (7)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 14.91 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.42 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.45 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.29 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 2.03 ms (1)
+May 27 22:43:13 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.70 ms (1)
+May 27 22:43:13 symfony [info] {sfWebResponse} Send content (45454 o)
+May 27 22:43:32 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp group by 1 -- -%, 1)
+May 27 22:43:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%scorp group by 1 -- -%, 1)
+May 27 22:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:32 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:32 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:32 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (13)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Factories 20.72 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Action "main/index" 47.43 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.95 ms (7)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 15.50 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.50 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.29 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.28 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.21 ms (1)
+May 27 22:43:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.31 ms (1)
+May 27 22:43:32 symfony [info] {sfWebResponse} Send content (45545 o)
+May 27 22:43:39 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:39 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%asdasd%, 1)
+May 27 22:43:39 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%asdasd%, 1)
+May 27 22:43:39 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:39 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:39 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:39 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:39 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:39 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:39 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (13)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Factories 22.12 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Action "main/index" 41.96 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.14 ms (7)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 16.89 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.37 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.87 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.46 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.85 ms (1)
+May 27 22:43:39 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.37 ms (1)
+May 27 22:43:39 symfony [info] {sfWebResponse} Send content (45376 o)
+May 27 22:43:53 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:43:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:43:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:43:53 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%1' or '1'='1%, 1)
+May 27 22:43:54 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%1' or '1'='1%, 1)
+May 27 22:43:54 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:43:54 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:54 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:43:54 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:43:54 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:43:54 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:43:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:43:54 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (13)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Factories 22.53 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Action "main/index" 44.94 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.47 ms (7)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 15.08 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.43 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.39 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.31 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.33 ms (1)
+May 27 22:43:54 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.33 ms (1)
+May 27 22:43:54 symfony [info] {sfWebResponse} Send content (45565 o)
+May 27 22:44:32 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:44:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%asdasd%, 1)
+May 27 22:44:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%asdasd%, 1)
+May 27 22:44:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:44:32 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:32 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:32 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (13)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Factories 23.99 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Action "main/index" 46.98 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.56 ms (7)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 14.51 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.36 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.51 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.26 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.18 ms (1)
+May 27 22:44:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.33 ms (1)
+May 27 22:44:32 symfony [info] {sfWebResponse} Send content (45376 o)
+May 27 22:44:33 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:44:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:33 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp group by 1 -- -%, 1)
+May 27 22:44:33 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%scorp group by 1 -- -%, 1)
+May 27 22:44:33 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:44:33 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:33 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:33 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:33 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:33 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:33 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (13)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Factories 21.20 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Action "main/index" 41.12 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.73 ms (7)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 14.05 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.37 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.28 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.30 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.15 ms (1)
+May 27 22:44:33 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.36 ms (1)
+May 27 22:44:33 symfony [info] {sfWebResponse} Send content (45545 o)
+May 27 22:44:34 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:44:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:34 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp group by 1 -- -%, 1)
+May 27 22:44:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%scorp group by 1 -- -%, 1)
+May 27 22:44:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:44:34 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:34 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:34 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (13)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Factories 18.42 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Action "main/index" 40.45 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.62 ms (7)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 13.06 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.32 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.42 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.31 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.16 ms (1)
+May 27 22:44:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.31 ms (1)
+May 27 22:44:34 symfony [info] {sfWebResponse} Send content (45454 o)
+May 27 22:44:38 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:44:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:38 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+May 27 22:44:38 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.nombre ASC LIMIT 5 - (1)
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:44:38 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:44:38 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:38 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:38 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:38 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:38 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:38 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (13)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Factories 19.27 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Action "main/index" 41.56 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.04 ms (9)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 20.44 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.44 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 2.22 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.39 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.86 ms (1)
+May 27 22:44:38 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.38 ms (1)
+May 27 22:44:38 symfony [info] {sfWebResponse} Send content (49994 o)
+May 27 22:44:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /main/episodios/listar/1 with parameters array (  'module' => 'main',  'action' => 'episodios',  'listar' => '1',)
+May 27 22:44:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:40 symfony [info] {mainActions} Call "mainActions->executeEpisodios()"
+May 27 22:44:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.idpodcast = ?) - (1)
+May 27 22:44:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.idepisodio AS e__idepisodio, e.nombre AS e__nombre, e.fuentemp3 AS e__fuentemp3, e.fuenteogg AS e__fuenteogg, e.podcast_idpodcast AS e__podcast_idpodcast, e.created_at AS e__created_at, e.updated_at AS e__updated_at FROM episodio e WHERE (e.podcast_idpodcast = ?) ORDER BY e.created_at DESC - (1)
+May 27 22:44:41 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/episodiosSuccess.php"
+May 27 22:44:41 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:41 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:41 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:41 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:41 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:41 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (13)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Factories 18.65 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Action "main/episodios" 148.68 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 37.94 ms (6)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} View "Success" for "main/episodios" 12.15 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.42 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.35 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.46 ms (1)
+May 27 22:44:41 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.45 ms (1)
+May 27 22:44:41 symfony [info] {sfWebResponse} Send content (42573 o)
+May 27 22:44:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+May 27 22:44:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 27 22:44:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 27 22:44:49 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+May 27 22:44:49 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+May 27 22:44:49 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+May 27 22:44:49 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:49 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+May 27 22:44:49 symfony [info] {main} Call "componentes->executeTitulo()"
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+May 27 22:44:49 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+May 27 22:44:49 symfony [info] {main} Call "componentes->executeEstilo()"
+May 27 22:44:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+May 27 22:44:49 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+May 27 22:44:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+May 27 22:44:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (13)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Factories 19.91 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Action "main/index" 45.92 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.36 ms (9)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.76 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.34 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.20 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.19 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.08 ms (1)
+May 27 22:44:49 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.30 ms (1)
+May 27 22:44:49 symfony [info] {sfWebResponse} Send content (49913 o)
+Jun 23 23:41:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:41:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:41:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:41:26 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:41:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:41:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:41:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:41:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+Jun 23 23:41:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:41:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+Jun 23 23:41:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Jun 23 23:41:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Jun 23 23:41:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:41:27 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:41:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:41:27 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:41:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:41:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:41:27 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:41:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:41:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:41:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:41:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Configuration 2.14 ms (13)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Factories 297.24 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Action "main/index" 710.66 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 128.09 ms (9)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 161.29 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.68 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.66 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 9.15 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.42 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 12.53 ms (1)
+Jun 23 23:41:27 symfony [info] {sfWebResponse} Send content (49361 o)
+Jun 23 23:42:55 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:42:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:42:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:42:55 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%kjk%, 1)
+Jun 23 23:42:55 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%kjk%, 1)
+Jun 23 23:42:55 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:42:55 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:42:55 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:42:55 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:42:55 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:42:55 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:42:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:42:55 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:42:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:42:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Configuration 1.52 ms (13)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Factories 20.41 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Action "main/index" 47.02 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.69 ms (7)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.69 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 1.17 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.42 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.28 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.22 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.49 ms (1)
+Jun 23 23:42:55 symfony [info] {sfWebResponse} Send content (45100 o)
+Jun 23 23:43:04 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:43:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:43:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:43:04 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%scorp%, 1)
+Jun 23 23:43:04 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) LIMIT 5 - (%scorp%, 1)
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Jun 23 23:43:04 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:43:04 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:04 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:04 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:43:04 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:43:04 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:43:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:43:04 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:43:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:43:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (13)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Factories 21.33 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Action "main/index" 45.77 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.67 ms (9)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.76 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.37 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.13 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.27 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.05 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.26 ms (1)
+Jun 23 23:43:04 symfony [info] {sfWebResponse} Send content (49751 o)
+Jun 23 23:43:27 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:43:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:43:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:43:27 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%kjk%, 1)
+Jun 23 23:43:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%kjk%, 1)
+Jun 23 23:43:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:43:27 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:27 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:27 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:43:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:43:27 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:43:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:43:27 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:43:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:43:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (13)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Factories 20.29 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Action "main/index" 42.78 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.66 ms (7)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 13.28 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.36 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.19 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.33 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.08 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.30 ms (1)
+Jun 23 23:43:27 symfony [info] {sfWebResponse} Send content (45100 o)
+Jun 23 23:43:30 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:43:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:43:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:43:30 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+Jun 23 23:43:30 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Jun 23 23:43:30 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:43:30 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:30 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:30 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:43:30 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:43:30 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:43:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:43:30 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:43:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:43:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (13)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Factories 21.65 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Action "main/index" 40.24 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.97 ms (9)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 27.85 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.62 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.62 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 6.97 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.44 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.34 ms (1)
+Jun 23 23:43:30 symfony [info] {sfWebResponse} Send content (49552 o)
+Jun 23 23:43:32 symfony [info] {sfPatternRouting} Match route "main" (/main) for /main with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:43:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:43:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:43:32 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.nombre LIKE ? AND p.publicado = ? - (%kjk%, 1)
+Jun 23 23:43:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.nombre LIKE ? AND p.publicado = ?) - (%kjk%, 1)
+Jun 23 23:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:43:32 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:32 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:32 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:43:32 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:43:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:43:32 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:43:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:43:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (13)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Factories 21.27 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Action "main/index" 44.42 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.76 ms (7)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 13.46 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.35 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.10 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.99 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 1.17 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.33 ms (1)
+Jun 23 23:43:32 symfony [info] {sfWebResponse} Send content (45100 o)
+Jun 23 23:43:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:43:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:43:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:43:34 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+Jun 23 23:43:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Jun 23 23:43:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:43:34 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:34 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:43:34 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:43:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:43:34 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:43:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:43:34 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:43:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:43:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (13)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Factories 29.11 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Action "main/index" 45.42 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.31 ms (9)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 18.10 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.36 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.26 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.29 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 0.92 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.31 ms (1)
+Jun 23 23:43:34 symfony [info] {sfWebResponse} Send content (49552 o)
+Jun 23 23:43:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /login with parameters array (  'module' => 'login',  'action' => 'index',)
+Jun 23 23:43:53 symfony [info] {sfFrontWebController} Action "login/index" does not exist
+Jun 23 23:43:53 symfony [err] {sfError404Exception} Action "login/index" does not exist.
+Jun 23 23:43:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jun 23 23:43:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:43:53 symfony [info] {sfWebDebugLogger} Configuration 0.75 ms (5)
+Jun 23 23:43:53 symfony [info] {sfWebDebugLogger} Factories 19.57 ms (1)
+Jun 23 23:44:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jun 23 23:44:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jun 23 23:44:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jun 23 23:44:07 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+Jun 23 23:44:08 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Jun 23 23:44:08 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Jun 23 23:44:08 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:44:08 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Jun 23 23:44:08 symfony [info] {main} Call "componentes->executeTitulo()"
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Jun 23 23:44:08 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Jun 23 23:44:08 symfony [info] {main} Call "componentes->executeEstilo()"
+Jun 23 23:44:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Jun 23 23:44:08 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Jun 23 23:44:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jun 23 23:44:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (13)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Factories 23.34 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Action "main/index" 46.78 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.03 ms (9)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 21.77 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 0.42 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 1.42 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 0.29 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 0.92 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 0.40 ms (1)
+Jun 23 23:44:08 symfony [info] {sfWebResponse} Send content (49552 o)
+Aug 05 06:06:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Aug 05 06:06:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 05 06:06:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 05 06:06:40 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.sitiohabilitado AS c__sitiohabilitado FROM configuracion c - ()
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.cantidadpodcastporpagina AS c__cantidadpodcastporpagina FROM configuracion c - ()
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM podcast p WHERE p.publicado = ? - (1)
+Aug 05 06:06:40 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/indexSuccess.php"
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.idpodcast AS p__idpodcast, p.nombre AS p__nombre, p.descripcion AS p__descripcion, p.publicado AS p__publicado, p.imagen AS p__imagen, p.categoria_idcategoria AS p__categoria_idcategoria, p.user_id AS p__user_id, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM podcast p WHERE (p.publicado = ?) ORDER BY p.updated_at DESC LIMIT 5 - (1)
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (6)
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (2)
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT c.idcategoria AS c__idcategoria, c.nombre AS c__nombre FROM categoria c WHERE (c.idcategoria = ?) - (1)
+Aug 05 06:06:40 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/main/templates/_paginador.php"
+Aug 05 06:06:40 symfony [info] {sfPHPView} Decorate content with "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Aug 05 06:06:40 symfony [info] {sfPHPView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/templates/layout.php"
+Aug 05 06:06:40 symfony [info] {main} Call "componentes->executeTitulo()"
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.nombresitio AS c__nombresitio FROM configuracion c - ()
+Aug 05 06:06:40 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_titulo.php"
+Aug 05 06:06:40 symfony [info] {main} Call "componentes->executeEstilo()"
+Aug 05 06:06:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT c.idconfig AS c__idconfig, c.plantilladefecto AS c__plantilladefecto FROM configuracion c - ()
+Aug 05 06:06:40 symfony [info] {sfPartialView} Render "/home/dsa/NetBeansProjects/podcast/apps/frontend/modules/componentes/templates/_estilo.php"
+Aug 05 06:06:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 05 06:06:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Configuration 315.19 ms (13)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Factories 95.82 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Action "main/index" 181.12 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 61.41 ms (11)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 100.28 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Partial "main/_paginador" 2.03 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Component "componentes/titulo" 2.63 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Partial "componentes/_titulo" 1.16 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Component "componentes/estilo" 2.68 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebDebugLogger} Partial "componentes/_estilo" 1.16 ms (1)
+Aug 05 06:06:40 symfony [info] {sfWebResponse} Send content (54182 o)
