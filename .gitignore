@@ -1,5 +1,5 @@
 cache/*
-log/*
+log/
 web/uploads/*
 data/sql/*
 data/podcast.index/
@@ -12,3 +12,4 @@ lib/model/doctrine/*Plugin/base/Base*
 lib/model/om/*
 lib/model/map/*
 web/*Plugin/*
+/nbproject/private/

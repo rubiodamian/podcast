@@ -1,0 +1,84 @@
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP Stack trace:
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[30-Sep-2013 20:20:49 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP Stack trace:
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[30-Sep-2013 20:41:57 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP Stack trace:
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[30-Sep-2013 20:42:07 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP Stack trace:
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[01-Oct-2013 20:50:04 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP Stack trace:
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[01-Oct-2013 20:50:11 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP Stack trace:
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[01-Oct-2013 20:51:25 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP Warning:  symlink(): File exists in /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php on line 224
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP Stack trace:
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   1. {main}() /home/demian/NetBeansProjects/podcast/symfony:0
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   2. include() /home/demian/NetBeansProjects/podcast/symfony:14
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   3. sfSymfonyCommandApplication->run() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/cli.php:20
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   4. sfTask->runFromCLI() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   5. sfBaseTask->doRun() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   6. sfPluginPublishAssetsTask->execute() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   7. sfPluginPublishAssetsTask->installPluginAssets() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:82
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   8. sfFilesystem->relativeSymlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/plugin/sfPluginPublishAssetsTask.class.php:98
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP   9. sfFilesystem->symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:242
+[01-Oct-2013 20:51:31 America/Buenos_Aires] PHP  10. symlink() /home/demian/NetBeansProjects/podcast/lib/vendor/symfony/lib/task/sfFilesystem.class.php:224

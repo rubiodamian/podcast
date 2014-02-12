@@ -3,7 +3,7 @@
 
 rendering: ~
 remember_me:
-          class: sfGuardRememberMeFilter
+          class: RememberFilter
 security:  ~
 
 # insert your own filters here

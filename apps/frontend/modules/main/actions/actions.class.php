@@ -54,7 +54,7 @@ class mainActions extends sfActions
   public function executeDescargar(sfWebRequest $request)
   {
   	$archivo=$request->getParameter('archivo');
-  	$file='localhost/web/uploads/music/'.$archivo;
+  	$file=sfConfig::get('sf_root_dir').'/web/uploads/music/'.$archivo;
   	$type=finfo_file(finfo_open(FILEINFO_MIME_TYPE),$file);
   	$size=filesize($file);
   	$this->getResponse()->clearHttpHeaders(); 
