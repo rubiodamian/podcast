@@ -23,26 +23,27 @@ class myUser extends sfGuardSecurityUser {
                     ->where('created_at < ?', date('Y-m-d H:i:s', time() - $expiration_age))
                     ->execute();
 
-            // remove other keys from this user
-            Doctrine_Core::getTable('sfGuardRememberKey')->createQuery()
-                    ->delete()
-                    ->where('user_id = ?', $user->getId())
-                    ->execute();
-
-            // generate new keys
             $key = $this->generateRandomKey();
-
-            // save key
-            $rk = new sfGuardRememberKey();
-            $rk->setRememberKey($key);
-            $rk->setUser($user);
-            $rk->setUserAgent(sfContext::getInstance()->getRequest()->getHttpHeader('User-Agent'));
-            $rk->setIpAddress($_SERVER['REMOTE_ADDR']);
-            $rk->save($con);
-
+            if (is_object($remember)) {
+                $remember->remember_key = $key;
+                $series_number = $remember->series_number;
+                $remember->save($con);
+            } else {
+                // generate new keys
+                $series_number = $this->generateRandomKey();
+                $rk = new sfGuardRememberKey();
+                $rk->setRememberKey($key);
+                $rk->setSeriesNumber($series_number);
+                $rk->setUser($user);
+                $rk->setUserAgent(sfContext::getInstance()->getRequest()->getHttpHeader('User-Agent'));
+                $rk->setIpAddress($_SERVER['REMOTE_ADDR']);
+                $rk->save($con);
+            }
+            $value = $key . "-" . $series_number;
             // make key as a cookie
             $remember_cookie = sfConfig::get('app_sf_guard_plugin_remember_cookie_name', 'sfRemember');
-            sfContext::getInstance()->getResponse()->setCookie($remember_cookie, $key, time() + $expiration_age);
+            sfContext::getInstance()->getResponse()->setCookie($remember_cookie, $value, time() + $expiration_age);
         }
     }
+
 }

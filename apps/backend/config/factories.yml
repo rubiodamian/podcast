@@ -29,6 +29,12 @@ dev:
       delivery_strategy: none
 
 all:
+  storage:
+    class: sfSessionStorage
+    param:
+        session_cookie_domain:   podcast.com
+        session_cookie_secure:   true
+        session_cookie_httponly: true
   routing:
     class: sfPatternRouting
     param:

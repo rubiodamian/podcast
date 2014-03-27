@@ -8,16 +8,22 @@
  * @property integer $user_id
  * @property string $remember_key
  * @property string $ip_address
+ * @property string $user_agent
+ * @property string $series_number
  * @property sfGuardUser $User
  * 
- * @method integer            getUserId()       Returns the current record's "user_id" value
- * @method string             getRememberKey()  Returns the current record's "remember_key" value
- * @method string             getIpAddress()    Returns the current record's "ip_address" value
- * @method sfGuardUser        getUser()         Returns the current record's "User" value
- * @method sfGuardRememberKey setUserId()       Sets the current record's "user_id" value
- * @method sfGuardRememberKey setRememberKey()  Sets the current record's "remember_key" value
- * @method sfGuardRememberKey setIpAddress()    Sets the current record's "ip_address" value
- * @method sfGuardRememberKey setUser()         Sets the current record's "User" value
+ * @method integer            getUserId()        Returns the current record's "user_id" value
+ * @method string             getRememberKey()   Returns the current record's "remember_key" value
+ * @method string             getIpAddress()     Returns the current record's "ip_address" value
+ * @method string             getUserAgent()     Returns the current record's "user_agent" value
+ * @method string             getSeriesNumber()  Returns the current record's "series_number" value
+ * @method sfGuardUser        getUser()          Returns the current record's "User" value
+ * @method sfGuardRememberKey setUserId()        Sets the current record's "user_id" value
+ * @method sfGuardRememberKey setRememberKey()   Sets the current record's "remember_key" value
+ * @method sfGuardRememberKey setIpAddress()     Sets the current record's "ip_address" value
+ * @method sfGuardRememberKey setUserAgent()     Sets the current record's "user_agent" value
+ * @method sfGuardRememberKey setSeriesNumber()  Sets the current record's "series_number" value
+ * @method sfGuardRememberKey setUser()          Sets the current record's "User" value
  * 
  * @package    entrega3
  * @subpackage model
@@ -39,6 +45,12 @@ abstract class BasesfGuardRememberKey extends sfDoctrineRecord
         $this->hasColumn('ip_address', 'string', 50, array(
              'type' => 'string',
              'length' => 50,
+             ));
+        $this->hasColumn('user_agent', 'string', null, array(
+             'type' => 'string',
+             ));
+        $this->hasColumn('series_number', 'string', null, array(
+             'type' => 'string',
              ));
 
         $this->option('symfony', array(

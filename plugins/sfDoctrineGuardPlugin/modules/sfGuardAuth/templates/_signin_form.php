@@ -1,5 +1,7 @@
 <?php use_helper('I18N') ?>
-
+<?php if ($sf_user->hasFlash('error')): ?>
+  <div class="flash_error"><?php echo $sf_user->getFlash('error') ?></div>
+<?php endif ?>
 <form action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
   <table>
     <tbody>
