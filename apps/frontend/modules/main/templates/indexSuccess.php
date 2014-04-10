@@ -4,12 +4,12 @@
     <label for="campo">Ordenar por</label>
   	<select id="campo" name="select">
 	  <option value="nombre"  >Nombre</option>
-	  <option value="updated_at" >Fecha</option>
+	  <option value="fecha" >Fecha</option>
 	</select>
 	<label for="modo">Orden</label>
 	<select id="modo" name="select2">
-	  <option value="ASC" selected="selected" >Ascendente</option>
-	  <option value="DESC" >Descendente</option>
+	  <option value="up" selected="selected" >Ascendente</option>
+	  <option value="down" >Descendente</option>
 	</select>
   <input value="Ordenar" type="submit" />	
   </form>
