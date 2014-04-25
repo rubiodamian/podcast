@@ -2,11 +2,12 @@
 # http://www.symfony-project.org/reference/1_4/en/12-Filters
 
 rendering: ~
+active_user_filter:
+          class: ActiveUserFilter
+session_management:
+          class: SessionManagementFilter
+security:  ~
 remember_me:
           class: sfGuardRememberMeFilter
-security:  ~
-
-# insert your own filters here
-
 cache:     ~
 execution: ~

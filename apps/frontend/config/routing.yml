@@ -14,6 +14,12 @@ homepage:
   url:   /
   param: { module: main, action: index }
 
+episode_download:
+  url:   /main/episodios/:id/download
+  class:   sfDoctrineRoute
+  options: { model: Episodio, type: object}
+  param: { module: main, action: descargar }
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:

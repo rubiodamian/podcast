@@ -150,6 +150,11 @@ sfGuardRememberKey:
     user_id: integer
     remember_key: string(32)
     ip_address: string(50)
+    user_agent: string
+    series_number: string
+    theft_assumed:
+        type: boolean
+        default: 0
   relations:
     User:
       class: sfGuardUser
